@@ -28,8 +28,28 @@ section {
       display: inline-block;
       margin-right: 36px;
       position: relative; }
-  .navigation a {
-    text-decoration: none;
-    color: #dcdde1; }
-    .navigation a:hover {
-      color: #a1a2a3; }
+      .navigation ul li a {
+        text-decoration: none;
+        color: #dcdde1; }
+        .navigation ul li a:hover {
+          color: #a1a2a3; }
+      .navigation ul li ul {
+        display: none;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 12px; }
+        .navigation ul li ul li {
+          display: block;
+          margin-bottom: 12px; }
+      .navigation ul li:hover ul {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        background: #44bd32; }
+        .navigation ul li:hover ul li a {
+          text-decoration: none;
+          color: #2f3640;
+          display: block;
+          padding: 0 24px; }
+          .navigation ul li:hover ul li a:hover {
+            color: #616f83; }
