@@ -12,7 +12,10 @@ body {
 .container {
   max-width: 1140px;
   padding: 0 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 section {
   padding: 96px 0; }
@@ -99,3 +102,60 @@ section {
       color: #2f3640; }
       .splash .splash-inner .btn-one:hover {
         color: #dcdde1; }
+
+.our-services {
+  padding: 20px; }
+  .our-services .container {
+    padding: 0; }
+
+.our-services > h1 {
+  font-size: 30px;
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.service {
+  flex: 0 0 32%;
+  position: relative; }
+  .service h1 {
+    position: absolute;
+    font-size: 144px;
+    margin: 0;
+    line-height: 1;
+    opacity: 0.2; }
+  .service h2 {
+    margin: 0 0; }
+  .service p {
+    margin: 0 0; }
+  .service p:first-of-type {
+    margin: 10px 0;
+    font-weight: bold; }
+  .service .btn-two {
+    border-color: #316e0b;
+    background-image: linear-gradient(90deg, #316e0b 50%, transparent 50%);
+    color: #316e0b; }
+    .service .btn-two:hover {
+      color: #dcdde1; }
+  .service .btn-three {
+    border-color: #5d520d;
+    background-image: linear-gradient(90deg, #5d520d 50%, transparent 50%);
+    color: #5d520d; }
+    .service .btn-three:hover {
+      color: #dcdde1; }
+  .service .btn-four {
+    border-color: #650341;
+    background-image: linear-gradient(90deg, #650341 50%, transparent 50%);
+    color: #650341; }
+    .service .btn-four:hover {
+      color: #dcdde1; }
+
+.service-one > h1 {
+  color: #316e0b; }
+
+.service-two > h1 {
+  color: #5d520d; }
+
+.service-three > h1 {
+  color: #650341; }
+
+.btn-two, .btn-three, .btn-four {
+  width: 100%; }

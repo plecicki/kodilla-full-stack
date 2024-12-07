@@ -14,6 +14,10 @@ $twinkle-star-font: "Twinkle Star", serif;
 
 $transition: all 1s;
 
+$service-one-color: #316e0b;
+$service-two-color: #5d520d;
+$service-three-color: #650341;
+
 // Global
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -32,6 +36,9 @@ body {
     max-width: 1140px;
     padding: 0 20px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 section {
@@ -144,4 +151,80 @@ section {
             }
         }
     }
+}
+
+// Our Services
+.our-services {
+    padding: 20px;
+    .container {
+        padding: 0;
+    }
+}
+
+.our-services > h1 {
+    font-size: 30px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.service {
+    flex: 0 0 32%;
+    position: relative;
+    h1 {
+        position: absolute;
+        font-size: 144px;
+        margin: 0;
+        line-height: 1;
+        opacity: 0.2;
+    }
+    h2 {
+        margin: 0 0;
+    }
+    p {
+        margin: 0 0;
+    }
+    p:first-of-type {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    .btn-two {
+        border-color: $service-one-color;
+        background-image: linear-gradient(90deg, $service-one-color 50%, transparent 50%);
+        color: $service-one-color;
+        &:hover {
+            color: $light-text-color;
+        }
+    }
+    .btn-three {
+        border-color: $service-two-color;
+        background-image: linear-gradient(90deg, $service-two-color 50%, transparent 50%);
+        color: $service-two-color;
+        &:hover {
+            color: $light-text-color;
+        }
+    }
+    .btn-four {
+        border-color: $service-three-color;
+        background-image: linear-gradient(90deg, $service-three-color 50%, transparent 50%);
+        color: $service-three-color;
+        &:hover {
+            color: $light-text-color;
+        }
+    }
+}
+
+.service-one > h1 {
+    color: $service-one-color;
+}
+
+.service-two > h1 {
+    color: $service-two-color;
+}
+
+.service-three > h1 {
+    color: $service-three-color;
+}
+
+.btn-two, .btn-three, .btn-four {
+    width: 100%;
 }
