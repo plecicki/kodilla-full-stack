@@ -18,6 +18,8 @@ $service-one-color: #316e0b;
 $service-two-color: #5d520d;
 $service-three-color: #650341;
 
+$our-work-rectangle-color: #57de03;
+
 // Global
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -153,15 +155,15 @@ section {
     }
 }
 
-// Our Services
-.our-services {
+// Our Services & Our Work
+.our-services, .our-work {
     padding: 20px;
     .container {
         padding: 0;
     }
 }
 
-.our-services > h1 {
+.our-services > h1, .our-work > h1 {
     font-size: 30px;
     max-width: 1140px;
     margin: 0 auto;
@@ -227,4 +229,61 @@ section {
 
 .btn-two, .btn-three, .btn-four {
     width: 100%;
+}
+
+.our-work {
+    background: $main-light-blue-color;
+}
+
+.work {
+    flex: 0 0 50%;
+    position: relative;
+    margin: 5px 0;
+    .work-image {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::after {
+            content: "";
+            background: $our-work-rectangle-color;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 20px;
+            top: 20px;
+            opacity: 0.3;
+            transition: $transition;
+        }
+    }
+    .work-image:hover::after {
+        left: 0;
+        top: 0;
+    }
+    .work-description {
+        padding: 0 3% 10px 53%;
+        text-align: left;
+        p:first-of-type {
+            font-size: 20px;
+        }
+        p:last-of-type {
+            font-weight: bold;
+        }
+        .btn-five {
+            border: none;
+            text-decoration: none;
+            margin: 36px 0;
+            padding: 0;
+            text-align: left;
+            color: blue;
+            &:hover {
+                color: purple;
+            }
+        }
+    }
 }

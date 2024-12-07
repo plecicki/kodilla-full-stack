@@ -103,12 +103,12 @@ section {
       .splash .splash-inner .btn-one:hover {
         color: #dcdde1; }
 
-.our-services {
+.our-services, .our-work {
   padding: 20px; }
-  .our-services .container {
+  .our-services .container, .our-work .container {
     padding: 0; }
 
-.our-services > h1 {
+.our-services > h1, .our-work > h1 {
   font-size: 30px;
   max-width: 1140px;
   margin: 0 auto; }
@@ -159,3 +159,49 @@ section {
 
 .btn-two, .btn-three, .btn-four {
   width: 100%; }
+
+.our-work {
+  background: #afc4f8; }
+
+.work {
+  flex: 0 0 50%;
+  position: relative;
+  margin: 5px 0; }
+  .work .work-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0; }
+    .work .work-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .work .work-image::after {
+      content: "";
+      background: #57de03;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 20px;
+      top: 20px;
+      opacity: 0.3;
+      transition: all 1s; }
+  .work .work-image:hover::after {
+    left: 0;
+    top: 0; }
+  .work .work-description {
+    padding: 0 3% 10px 53%;
+    text-align: left; }
+    .work .work-description p:first-of-type {
+      font-size: 20px; }
+    .work .work-description p:last-of-type {
+      font-weight: bold; }
+    .work .work-description .btn-five {
+      border: none;
+      text-decoration: none;
+      margin: 36px 0;
+      padding: 0;
+      text-align: left;
+      color: blue; }
+      .work .work-description .btn-five:hover {
+        color: purple; }
