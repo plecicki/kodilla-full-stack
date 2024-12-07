@@ -1,2 +1,18 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
 body {
-  background: gray; }
+  background: #8c7ae6;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Sour Gummy", serif;
+  color: #2f3640; }
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+section {
+  padding: 96px 0; }
