@@ -5,6 +5,7 @@ $main-green-color: #44bd32;
 
 $dark-text-color: #2f3640;
 $light-text-color: #dcdde1;
+$hover-light-text-color: #a1a2a3;
 
 $sour-gummy-font: "Sour Gummy", serif;
 $twinkle-star-font: "Twinkle Star", serif;
@@ -31,4 +32,27 @@ body {
 
 section {
     padding: 96px 0;
+}
+
+// Navigation
+.navigation {
+    background: $main-yellow-color;
+    padding: 12px 0;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin-right: 36px;
+            position: relative;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $light-text-color;
+        &:hover {
+            color: $hover-light-text-color;
+        }
+    }
 }
