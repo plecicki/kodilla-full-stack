@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #8c7ae6;
+  background: #d9e2f7;
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
@@ -45,7 +45,7 @@ section {
         display: block;
         margin: 0 auto;
         position: absolute;
-        background: #44bd32; }
+        background: #6079b6; }
         .navigation ul li:hover ul li a {
           text-decoration: none;
           color: #2f3640;
@@ -53,3 +53,25 @@ section {
           padding: 0 24px; }
           .navigation ul li:hover ul li a:hover {
             color: #616f83; }
+
+.splash {
+  background: #afc4f8;
+  color: #2f3640;
+  min-height: 500px;
+  display: flex; }
+  .splash .splash-inner {
+    margin: auto;
+    max-width: 70%; }
+    .splash .splash-inner h1 {
+      font-family: "Twinkle Star", serif;
+      margin: 0;
+      font-size: 72px;
+      word-spacing: -10px;
+      font-weight: 700;
+      line-height: 1.2; }
+      .splash .splash-inner h1 span {
+        font-family: "Sour Gummy", serif; }
+    .splash .splash-inner h2 {
+      margin: 24px 0;
+      font-size: 400;
+      font-size: 16; }

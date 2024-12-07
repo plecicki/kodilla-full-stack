@@ -1,7 +1,8 @@
 // Variables
-$main-background-color: #8c7ae6;
-$main-yellow-color: #192a56;
-$main-green-color: #44bd32;
+$main-background-color: #d9e2f7;
+$main-dark-blue-color: #192a56;
+$main-blue-color: #6079b6;
+$main-light-blue-color: #afc4f8;
 
 $dark-text-color: #2f3640;
 $hover-dark-text-color: #616f83;
@@ -37,7 +38,7 @@ section {
 
 // Navigation
 .navigation {
-    background: $main-yellow-color;
+    background: $main-dark-blue-color;
     padding: 12px 0;
     ul {
         padding: 0;
@@ -69,7 +70,7 @@ section {
                     display: block;
                     margin: 0 auto;
                     position: absolute;
-                    background: $main-green-color;
+                    background: $main-blue-color;
                     li {
                         a {
                             text-decoration: none;
@@ -83,6 +84,34 @@ section {
                     }
                 }
             }
+        }
+    }
+}
+
+// Splash
+.splash {
+    background: $main-light-blue-color;
+    color: $dark-text-color;
+    min-height: 500px;
+    display: flex;
+    .splash-inner {
+        margin: auto;
+        max-width: 70%;
+        h1 {
+            font-family: $twinkle-star-font;
+            margin: 0;
+            font-size: 72px;
+            word-spacing: -10px;
+            font-weight: 700;
+            line-height: 1.2;
+            span {
+                font-family: $sour-gummy-font;
+            }
+        }
+        h2 {
+            margin: 24px 0;
+            font-size: 400;
+            font-size: 16;
         }
     }
 }
