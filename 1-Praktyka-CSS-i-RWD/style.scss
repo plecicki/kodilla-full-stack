@@ -12,6 +12,8 @@ $hover-light-text-color: #a1a2a3;
 $sour-gummy-font: "Sour Gummy", serif;
 $twinkle-star-font: "Twinkle Star", serif;
 
+$transition: all 1s;
+
 // Global
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -34,6 +36,26 @@ body {
 
 section {
     padding: 96px 0;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $sour-gummy-font;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    &:hover {
+        background-position: 0 100%;
+    }
 }
 
 // Navigation
@@ -112,6 +134,14 @@ section {
             margin: 24px 0;
             font-size: 400;
             font-size: 16;
+        }
+        .btn-one {
+            border-color: $dark-text-color;
+            background-image: linear-gradient(90deg, $dark-text-color 50%, transparent 50%);
+            color: $dark-text-color;
+            &:hover {
+                color: $light-text-color;
+            }
         }
     }
 }

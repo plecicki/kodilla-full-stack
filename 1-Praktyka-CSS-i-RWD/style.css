@@ -17,6 +17,24 @@ body {
 section {
   padding: 96px 0; }
 
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Sour Gummy", serif;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s; }
+  .btn:hover {
+    background-position: 0 100%; }
+
 .navigation {
   background: #192a56;
   padding: 12px 0; }
@@ -75,3 +93,9 @@ section {
       margin: 24px 0;
       font-size: 400;
       font-size: 16; }
+    .splash .splash-inner .btn-one {
+      border-color: #2f3640;
+      background-image: linear-gradient(90deg, #2f3640 50%, transparent 50%);
+      color: #2f3640; }
+      .splash .splash-inner .btn-one:hover {
+        color: #dcdde1; }
