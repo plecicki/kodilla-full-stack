@@ -155,20 +155,21 @@ section {
     }
 }
 
-// Our Services & Our Work
-.our-services, .our-work {
+// Our Services & Our Work & Contact Us - Basic and Headers
+.our-services, .our-work, .contact-us {
     padding: 20px;
     .container {
         padding: 0;
     }
 }
 
-.our-services > h1, .our-work > h1 {
+.our-services > h1, .our-work > h1, .contact-us > h1 {
     font-size: 30px;
     max-width: 1140px;
     margin: 0 auto;
 }
 
+// Our Services
 .service {
     flex: 0 0 32%;
     position: relative;
@@ -231,6 +232,7 @@ section {
     width: 100%;
 }
 
+// Our Work
 .our-work {
     background: $main-light-blue-color;
 }
@@ -251,7 +253,7 @@ section {
         }
         &::after {
             content: "";
-            background: $our-work-rectangle-color;
+            background: $main-dark-blue-color;
             position: absolute;
             height: 100%;
             width: 100%;
@@ -285,5 +287,59 @@ section {
                 color: purple;
             }
         }
+    }
+}
+
+//Contact Us
+.contact-us {
+    background: $main-dark-blue-color;
+    color: $light-text-color;
+    h1 {
+        padding-bottom: 60px;;
+    }
+}
+
+.contact-form {
+    flex: 2 0 0;
+    padding-right: 96px;
+    * {
+        margin-top: 10px;
+        display: block;
+    }
+    input, textarea {
+        width: 100%;
+        background: $main-dark-blue-color;
+        border: 0;
+        border-bottom: solid $light-text-color 5px;
+        color: $light-text-color;
+        &::placeholder {
+            color: $light-text-color;
+            padding: 5px;
+        }
+    }
+    input {
+        height: 40px;
+    }
+    .btn-six {
+        margin-left: 0;
+        border-color: $main-blue-color;
+        background-image: linear-gradient(90deg, $main-blue-color 50%, $light-text-color 50%);
+        color: $main-blue-color;
+        &:hover {
+            color: $light-text-color;
+        }
+    }
+}
+
+.contact-description {
+    flex: 1 0 0;
+    .title-par {
+        margin-bottom: 0;
+        font-weight: bold;
+        font-family: $twinkle-star-font;
+        font-size: 20px;
+    }
+    .desc-par {
+        margin-top: 0;
     }
 }

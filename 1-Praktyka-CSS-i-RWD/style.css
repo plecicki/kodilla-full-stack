@@ -103,12 +103,12 @@ section {
       .splash .splash-inner .btn-one:hover {
         color: #dcdde1; }
 
-.our-services, .our-work {
+.our-services, .our-work, .contact-us {
   padding: 20px; }
-  .our-services .container, .our-work .container {
+  .our-services .container, .our-work .container, .contact-us .container {
     padding: 0; }
 
-.our-services > h1, .our-work > h1 {
+.our-services > h1, .our-work > h1, .contact-us > h1 {
   font-size: 30px;
   max-width: 1140px;
   margin: 0 auto; }
@@ -178,7 +178,7 @@ section {
       object-fit: cover; }
     .work .work-image::after {
       content: "";
-      background: #57de03;
+      background: #192a56;
       position: absolute;
       height: 100%;
       width: 100%;
@@ -205,3 +205,44 @@ section {
       color: blue; }
       .work .work-description .btn-five:hover {
         color: purple; }
+
+.contact-us {
+  background: #192a56;
+  color: #dcdde1; }
+  .contact-us h1 {
+    padding-bottom: 60px; }
+
+.contact-form {
+  flex: 2 0 0;
+  padding-right: 96px; }
+  .contact-form * {
+    margin-top: 10px;
+    display: block; }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    background: #192a56;
+    border: 0;
+    border-bottom: solid #dcdde1 5px;
+    color: #dcdde1; }
+    .contact-form input::placeholder, .contact-form textarea::placeholder {
+      color: #dcdde1;
+      padding: 5px; }
+  .contact-form input {
+    height: 40px; }
+  .contact-form .btn-six {
+    margin-left: 0;
+    border-color: #6079b6;
+    background-image: linear-gradient(90deg, #6079b6 50%, #dcdde1 50%);
+    color: #6079b6; }
+    .contact-form .btn-six:hover {
+      color: #dcdde1; }
+
+.contact-description {
+  flex: 1 0 0; }
+  .contact-description .title-par {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: "Twinkle Star", serif;
+    font-size: 20px; }
+  .contact-description .desc-par {
+    margin-top: 0; }
