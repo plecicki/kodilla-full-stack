@@ -374,7 +374,7 @@ footer {
 }
 
 // Media
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .container {
         flex-direction: column;
     }
@@ -386,7 +386,6 @@ footer {
             position: relative;
             width: 100%;
             img {
-                max-height: 400px;
                 object-fit: cover;
             }
         }
@@ -399,27 +398,22 @@ footer {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .container {
-        flex-direction: column;
-    }
+@media (max-width: 767px) {
     .work {
-        flex: 0 0 50%;
-        position: relative;
-        margin: 5px 0;
         .work-image {
-            position: relative;
-            width: 100%;
             img {
-                max-height: 800px;
-                object-fit: cover;
+                max-height: 400px;
             }
         }
-        .work-description {
-            padding: 0 3% 10px 3%;
-        }
     }
-    .contact-description {
-        margin-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .work {
+        .work-image {
+            img {
+                max-height: 800px;
+            }
+        }
     }
 }
