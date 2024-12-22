@@ -35,3 +35,25 @@ body {
     height: 300px;
     object-fit: cover;
 }
+
+// Contact
+.card a {
+    color: black;
+}
+
+.card label {
+    display:inline-block;
+    text-align:left;
+    width:150px;
+    font-size: 12px;
+    color: gray;
+}
+
+.contact button {
+    width: 80px;
+}
+
+.contact .card {
+    background: $primary-color;
+    border: 0;
+}
