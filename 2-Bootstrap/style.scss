@@ -57,3 +57,11 @@ body {
     background: $primary-color;
     border: 0;
 }
+
+// Footer
+footer {
+    background: $primary-medium-color;
+    a {
+        color: black;
+    }
+}
