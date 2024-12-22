@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "watch:scss": "node-sass -w 1-Praktyka-CSS-i-RWD/style.scss 1-Praktyka-CSS-i-RWD/style.css"
+    "watch:scss1": "node-sass -w 1-Praktyka-CSS-i-RWD/style.scss 1-Praktyka-CSS-i-RWD/style.css",
+    "watch:scss2": "node-sass -w 2-Bootstrap/style.scss 2-Bootstrap/style.css"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
